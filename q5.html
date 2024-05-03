@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Menu</title>
+  <link rel="stylesheet" href="q5.css">
+</head>
+<body>
+
+<div class="heading"><center>1) Explain the terms:</center></div>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">a. Hashing</div>
+    <div class="accordion-content">
+It is the process of applying a hash function to the input data in order to produce a fixed-size hash value.<br>
+h(data) = hashVal
+<br><br>
+Detailed explanation:
+<ul>
+    <li>It is an <em>irreversible</em> (not exactly) process of transforming data to fixed-size hash values for the verification of data integrity, indexing, and quick data retrieval.</li>
+it is the process of applying a hash function to the input data in order to produce a fixed-size hash value    <li>Alternatively,  (regardless of the size of the input data).</li>
+    <li>A hash function is a function that converts the input and generates a unique hash value of fixed length as output.</li>
+    <li>It is not exactly irreversible, but rather computationally infeasible to reverse engineer it.</li>
+</ul>
+<br>
+Properties of a <em>good hash function</em> include
+<ul>
+    <li><code>Collision resistance</code> (minimizing the likelihood of different inputs having the same hash value)</li>
+    <li><code>Avalanche effect</code> (a.k.a anti-clustering, small change in input data results in significant change in output hash value, so that the reverse engineers can't derive any meaningful information regarding the hash)</li>
+    <li><code>Deterministic</code> (hash function is a <em>function</em> in the mathematical sense)</li>
+</ul>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">b. Target Hash</div>
+    <div class="accordion-content">
+<ul>
+    <li>In <code>PoW</code> blockchains, each block has a unique identifier known as the <code>block hash</code>. This hash is calculated by taking the data in the block (including transactions, timestamp etc.) and running it through a cryptographic hash function (e.g. SHA-256).</li>
+    <li>Miners must find a <code>random number</code> and combine it with the block data in such a way that the resulting block hash must be less than or equal to some <code>threshold value</code>.</li>
+    <li>The random number is called the <code>Nonce</code> and the threshold value is called the <code>Target Hash</code>.</li>
+    <li>Finding a nonce that produces the <code>Target Hash</code> is the <em>proof of work</em>. It requires significant computational effort and energy. The first miner to find a valid <code>Nonce</code> gets to create the next block in the blockchain and is rewarded for their work.</li>
+</ul>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">c. <code>NFT</code></div>
+    <div class="accordion-content">
+<ul>
+    <li>A non-fungible token (<code>NFT</code>) is a unique digital identifier that is recorded on a blockchain and is used to certify ownership and authenticity of digital assets such as digital art, music, audio, videos, etc.</li>
+    <li>Artists and creators can tokenize their work as <code>NFT</code>s, enabling them to monetize digital content and retain ownership rights.</li>
+    <li>They are non-fungible because unlike cryptocurrencies such as Bitcoin or Ethereum, where each token is interchangeable and of equal value, <code>NFT</code>s are unique and cannot be exchanged on a one-to-one basis.</li>
+    <li><code>NFT</code>s allow individuals to buy, sell, and trade ownership of digital assets in a decentralized manner.</li>
+    <li>There are online marketplaces dedicated to buying, selling, and trading <code>NFT</code>s (e.g. NBA Top Shot).</li>
+</ul>   
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">d. Consensus Protocol</div>
+    <div class="accordion-content">
+<ul>
+    <li>In the context of communication systems, a <code>Protocol</code> is a set of rules and guidelines that govern how data is transmitted, received, and processed, which helps devices to effectively exchange information and interact with one another.</li>
+    <li>In a similar fashion, the <code>consensus protocol</code> is a set of rules and procedures that enable the nodes in a network to agree on the state of a shared ledger.</li>
+    <li>They primarily maintain the integrity of the blockchain technology and ensure its security implicitly in the protocol; In other words, different consensus protocols can lead to varying degrees of decentralization which impacts the security of the network.</li>
+</ul>
+<br>
+Commonly Used Consensus Protocols:
+<br>
+<ul>
+    <li><code>PoW</code> - Proof of Work involves <code>miners</code> competing to solve complex mathematical puzzles. The first miner to solve the puzzle gets to add a new block to the blockchain.</li>
+    <li><code>PoS</code> - In Proof of Stake system, the <code>validators</code> are chosen to create new blocks based on the amount of <code>cryptocurrency</code> they are willing to <code>stake as collateral</code>. This encourages the validators to follow the protocol to protect their staked assets.</li>
+</ul>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">e. Public Permissionless blockchain</div>
+    <div class="accordion-content">
+A public permissionless blockchain is a type of blockchain network that is open to anyone to join and participate in without requiring explicit permission.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">f. ERC-20 tokens</div>
+    <div class="accordion-content">
+ERC-20 tokens are a type of digital asset or cryptocurrency that are built and operate on the Ethereum blockchain.
+    </div>
+  </div>
+</div>
+
+<div class="heading"><center>2) One of the important things associated with distributed networks is IPFS. Discuss
+the use cases of IPFS ,also the advantages and disadvantages.</center></div>
+
+<div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Answer:</div>
+      <div class="accordion-content">
+IPFS, or the InterPlanetary File System, is a decentralized protocol for storing and sharing data in a peer-to-peer network. Unlike traditional web servers, which rely on centralized infrastructure, IPFS allows users to access and distribute content in a distributed manner.
+<br><b>Where is it used?</b>
+<ul>
+    <li>Efficiently share files across a decentralized network.</li>
+    <li>Facilitate website and application hosting without centralized servers.</li>
+    <li>Ensure long-term data preservation through decentralized archiving.</li>
+    <li>Empower decentralized applications (dApps) by off-chain data storage.</li>
+    <li>Enable offline access to files, ensuring accessibility in remote scenarios.</li>
+</ul>
+<br><br>
+<h2>Merits of IPFS:</h2>
+<ul>
+    <li>Decentralization eliminates reliance on central authorities, enhancing resilience.</li>
+    <li>Content addressing ensures the integrity and authenticity of files.</li>
+    <li>Efficient content distribution minimizes redundancy and optimizes resource utilization.</li>
+    <li>Offline access capability enables seamless file retrieval regardless of internet availability.</li>
+    <li>Scalability accommodates growing data volumes and user demands.</li>
+</ul>
+<br><br>
+<h2>Demerits of IPFS:</h2>
+<ul>
+    <li>Performance may vary, especially for large files or during peak usage periods.</li>
+    <li>Content discovery might pose challenges without centralized indexing mechanisms.</li>
+    <li>Data persistence lacks guarantees, potentially leading to data loss over time.</li>
+    <li>Security considerations require additional measures to safeguard sensitive information.</li>
+    <li>Network congestion could impact accessibility during periods of high demand.</li>
+</ul>
+
+      </div>
+    </div>
+</div>
+
+<div class="heading"><center>3) One of the major aspects of blockchain is <code>DeFi</code> (Decentralized Finance system). Discuss the
+advantages of using <code>DeFi</code> over traditional systems. Support your reasoning with suitable examples.</center></div>
+
+<div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Answer: </div>
+      <div class="accordion-content">
+<h2>Advantages of <code>DeFi</code> over Traditional Systems:</h2>
+<br><br>
+<ol>
+    <li><b>Financial Inclusion:</b> <code>DeFi</code> provides access to financial services for the unbanked and underbanked.</li>
+    <li><b>Accessibility:</b> <code>DeFi</code> platforms are available 24/7, accessible from anywhere with an internet connection.</li>
+    <li><b>Transparency:</b> Transactions and smart contracts on <code>DeFi</code> platforms are transparent and verifiable.</li>
+    <li><b>Security:</b> <code>DeFi</code> platforms leverage blockchain technology, offering enhanced security features.</li>
+    <li><b>Lower Costs:</b> <code>DeFi</code> eliminates intermediaries, reducing transaction costs associated with traditional finance.</li>
+    <li><b>Programmability:</b> <code>DeFi</code> protocols are programmable, allowing for customization and automation of financial products.</li>
+    <li><b>Innovation:</b> <code>DeFi</code> encourages innovation and experimentation in financial services.</li>
+    <li><b>Decentralization:</b> <code>DeFi</code> operates without central authorities, enhancing resilience and trust.</li>
+    <li><b>Fast and Efficient:</b> <code>DeFi</code> transactions are often faster and more efficient compared to traditional systems.</li>
+    <li><b>Global Access:</b> <code>DeFi</code> platforms are accessible to anyone with an internet connection, regardless of location or nationality.</li>
+</ol>
+      </div>
+    </div>
+</div>
+
+<script src="q5.js"></script>
+</body>
+</html>
