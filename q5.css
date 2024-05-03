@@ -5,7 +5,9 @@
 }
 
 body {
+  margin-top: 1cm;
   background-color: #34495e;
+  margin-bottom: 7cm;
 }
 
 .accordion {
@@ -14,6 +16,7 @@ body {
 }
 
 .heading {
+    margin-top: 4cm;
     background-color:rgb(101, 107, 48);
     padding:10px;
     font-size: 40px;
